@@ -13,7 +13,7 @@ const Shop = ({ addToCart }) => {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
-        const res = await fetch("http://localhost:3000/product/products");  
+        const res = await fetch("https://tech-bazaar-z546.onrender.com/product/products");  
         const data = await res.json();
         setProducts(data);
         setFilteredProducts(data);

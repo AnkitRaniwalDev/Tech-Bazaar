@@ -24,7 +24,7 @@ const Admin = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const res = await fetch("http://localhost:3000/admin/products", {
+        const res = await fetch("https://tech-bazaar-z546.onrender.com/admin/products", {
           method: "GET",
           headers: {
 
