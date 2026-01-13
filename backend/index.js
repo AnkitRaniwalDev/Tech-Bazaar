@@ -13,11 +13,10 @@ import  adminRouter  from "./src/routes/admin.route.js";
 dotenv.config();
 const app =express();
 app.use(cors({
-  origin: "https://tech-bazaar-ruby.vercel.app",
+  origin: "*", // यह अस्थाई रूप से सभी रिक्वेस्ट को अनुमति देगा ताकि हम चेक कर सकें
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
-
 app.use (express.json());
 
 
