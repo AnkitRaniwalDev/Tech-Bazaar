@@ -10,13 +10,14 @@ import cartRouter from "./src/routes/cart.routes.js";
 import cartActionsRouter from "./src/routes/cartActions.route.js";
 import  adminRouter  from "./src/routes/admin.route.js";
 
+dotenv.config();
+const app =express();
 app.use(cors({
-  origin: "*", // यह अस्थाई रूप से सभी रिक्वेस्ट को अनुमति देगा ताकि हम चेक कर सकें
+  origin: "https://tech-bazaar-ruby.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
-const app =express();
-app.use (cors());
+
 app.use (express.json());
 
 
