@@ -8,10 +8,10 @@ export default function Product({search}) {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                let url = "http://localhost:3000/product/products";
+                let url = "https://tech-bazaar-z546.onrender.com/product/products";
 
                 if (search) {
-                    url = `http://localhost:3000/product/search/${search}`;
+                    url = `https://tech-bazaar-z546.onrender.com/product/search/${search}`;
                 }
 
                 const res = await fetch(url);

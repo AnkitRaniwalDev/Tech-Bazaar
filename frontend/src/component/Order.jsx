@@ -10,7 +10,7 @@ const Orders = () => {
             const token = localStorage.getItem("token");
             if (!token) return;
 
-            const res = await fetch("http://localhost:3000/order/orders", {
+            const res = await fetch("https://tech-bazaar-z546.onrender.com/order/orders", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

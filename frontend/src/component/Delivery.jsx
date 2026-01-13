@@ -11,7 +11,7 @@ const Delivery = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await fetch("http://localhost:3000/cart/get", {
+        const response = await fetch("https://tech-bazaar-z546.onrender.com/cart/get", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const Delivery = () => {
         
       };
 
-     const response = await fetch("http://localhost:3000/order/order", {
+     const response = await fetch("https://tech-bazaar-z546.onrender.com/order/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -51,7 +51,7 @@ const Admin = () => {
     if (window.confirm("Are you sure?")) {
         try {
             const token = localStorage.getItem("token");
-            const res = await fetch(`http://localhost:3000/admin/delete-product/${id}`, {
+            const res = await fetch(`https://tech-bazaar-z546.onrender.com/admin/delete-product/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Authorization": token,

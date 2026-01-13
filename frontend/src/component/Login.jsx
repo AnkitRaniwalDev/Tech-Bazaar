@@ -20,7 +20,7 @@ const Login = () => {
    
 
     try {
-      const res = await fetch("http://localhost:3000/api/users/login", {
+      const res = await fetch("https://tech-bazaar-z546.onrender.com/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

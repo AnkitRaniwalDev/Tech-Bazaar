@@ -11,7 +11,7 @@ const Cart = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await fetch("http://localhost:3000/cart/get", {
+        const response = await fetch("https://tech-bazaar-z546.onrender.com/cart/get", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const Cart = () => {
 
  const handleQuantity = async (productId, type) => {
     const token = localStorage.getItem("token");
-    const res = await fetch(`http://localhost:3000/update/update/${productId}/${type}`, {
+    const res = await fetch(`https://tech-bazaar-z546.onrender.com/update/update/${productId}/${type}`, {
         method: "PUT",
         headers: {
             "Authorization": token
@@ -47,7 +47,7 @@ const Cart = () => {
 
 const handleRemove = async (title) => {
     const token = localStorage.getItem("token");
-    const res = await fetch(`http://localhost:3000/update/remove/${title}`, {
+    const res = await fetch(`https://tech-bazaar-z546.onrender.com/update/remove/${title}`, {
         method: "DELETE",
         headers: {
             "Authorization": token
